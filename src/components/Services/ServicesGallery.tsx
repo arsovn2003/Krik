@@ -14,7 +14,7 @@ const ServicesGallery = ({ gallery }: Props) => {
                 <div className="inner__div">
                     <div className="row">
                         <div className="col-4">
-                            {/* <img src={gallery.imgOne} className="img-fluid" /> */}
+                            <img src={gallery.imgOne} className="img-fluid" />
                         </div>
                         <div className="col-8">
                             <img src={gallery.imgTwo} className="img-fluid" />

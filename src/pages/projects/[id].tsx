@@ -87,10 +87,10 @@ const ProjectDetail = ({ detailsData, datesData }: Props) => {
 export async function getServerSideProps(context: any) {
     const { id } = context.params;
 
-    const projectDetailsRes = await fetch("http://localhost:5001/projects");
+    const projectDetailsRes = await fetch("https://server-json-one.vercel.app/projects");
     const detailsData: ProjectsProps = await projectDetailsRes.json();
 
-    const datesRes = await fetch("http://localhost:5001/projects_items");
+    const datesRes = await fetch("https://server-json-one.vercel.app/projects_items");
     const datesData = await datesRes.json();
 
     console.log('data:', detailsData);

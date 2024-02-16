@@ -124,13 +124,13 @@ const NewsletterDetail = ({ newsletterData, datesData, newsletterNews }: Newslet
 export async function getServerSideProps(context: any) {
     const { id } = context.params;
 
-    const newsletterRes = await fetch(`http://localhost:5001/newsletter/${id}`);
+    const newsletterRes = await fetch(`https://server-json-one.vercel.app/newsletter/${id}`);
     const newsletterData: NewsletterProps = await newsletterRes.json();
 
-    const datesRes = await fetch("http://localhost:5001/newsletter_dates");
+    const datesRes = await fetch("https://server-json-one.vercel.app/newsletter_dates");
     const datesData = await datesRes.json();
 
-    const datesRes2 = await fetch("http://localhost:5001/newsletter_news");
+    const datesRes2 = await fetch("https://server-json-one.vercel.app/newsletter_news");
     const newsletterNews = await datesRes2.json();
 
     return {
