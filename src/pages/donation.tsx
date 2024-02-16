@@ -14,7 +14,7 @@ const About = ({
             <div className="container-fluid py-5 my-8">
                 <div className="col-12">
                     <div className="title text-center m-auto">
-                        <h1 className="fw-800 headline-l">{dataDonation.first_section.heading}</h1>
+                        <h1 className="fw-800 headline-l">{dataDonation.body.first_section.heading}</h1>
                     </div>
                     <div className="container">
                         <nav className="mt-5">
