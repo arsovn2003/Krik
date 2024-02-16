@@ -9,7 +9,7 @@ import NewsBlock, { NewsItemInterface } from '@/components/Homepage/NewsBlock'
 import FloatContainer from '@/components/Homepage/FloatContainer'
 import { ServicesBlock } from '@/components/Homepage/ServicesBlock'
 import { Partners } from '@/components/Homepage/Partners'
-import DynamicPage from './[slug]'
+// import DynamicPage from './[slug]'
 import { VideoBlock } from '@/components/Homepage/VideoBlock'
 
 
