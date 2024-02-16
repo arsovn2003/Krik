@@ -32,17 +32,17 @@ const NewsletterBlock = ({ data, datesData }: Props) => {
                             <h2 className="headline-l fw-800">{datesData[0].month}</h2>
                         </Link>
                         <span className="orange__dot"></span>
-                        <p className="headline-s fw-700 lh-40">{data.body.content}</p>
+                        <p className="headline-s fw-700 lh-40">{data.content}</p>
                     </div>
                     <div className="img">
-                        <img src={data.body.image1} className="img-fluid purple-filter" />
+                        <img src={data.image1} className="img-fluid purple-filter" />
                     </div>
                     <div className="col-12">
                         <Link href={`/newsletter/${datesData[1].id}`} className="text-decoration-none text-black">
                             <h2 className="headline-l fw-800">{datesData[1].month}</h2>
                         </Link>
                         <span className="orange__dot"></span>
-                        <p className="headline-s fw-700 lh-40">{data.body.content}</p>
+                        <p className="headline-s fw-700 lh-40">{data.content}</p>
                     </div>
                 </div>
                 <div className="middle__container">
@@ -50,17 +50,17 @@ const NewsletterBlock = ({ data, datesData }: Props) => {
                 </div>
                 <div className="right__container d-flex flex-column justify-content-evenly ps-8 my-8">
                     <div className="img">
-                        <img src={data.body.image2} className="img-fluid purple-filter" />
+                        <img src={data.image2} className="img-fluid purple-filter" />
                     </div>
                     <div className="col-12">
                         <Link href={`/newsletter/${datesData[2].id}`} className="text-decoration-none text-black">
                             <h2 className="headline-l fw-800">{datesData[2].month}</h2>
                         </Link>
                         <span className="orange__dot__right"></span>
-                        <p className="headline-s fw-700 lh-40">{data.body.content}</p>
+                        <p className="headline-s fw-700 lh-40">{data.content}</p>
                     </div>
                     <div className="img">
-                        <img src={data.body.image3} className="img-fluid purple-filter" />
+                        <img src={data.image3} className="img-fluid purple-filter" />
                     </div>
                 </div>
             </div>

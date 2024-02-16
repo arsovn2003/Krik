@@ -18,10 +18,10 @@ const Newsletter = ({ data, datesData }: Props) => {
 export default Newsletter;
 
 export const getStaticProps: GetStaticProps = async () => {
-    const newsletterRes = await fetch("https://json-server-for-krik.onrender.com/newsletter");
+    const newsletterRes = await fetch("https://server-json-one.vercel.app/newsletter");
     const newsletterData: NewsletterProps = await newsletterRes.json();
 
-    const datesRes = await fetch("https://json-server-for-krik.onrender.com/newsletter_dates");
+    const datesRes = await fetch("https://server-json-one.vercel.app/newsletter_dates");
     const datesData: Dates[] = await datesRes.json();
 
     return {

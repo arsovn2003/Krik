@@ -14,7 +14,7 @@ export const DonationBlock = ({ props }: DonationBlockProps) => {
         <>
             <div className="Donation container p-5 box-shadow m-auto w-65 my-5">
                 <div className="inner p-5">
-                    <p className="headline-s fw-700">{props.body.second_section.text1}</p>
+                    <p className="headline-s fw-700">{props.second_section.text1}</p>
                     <div className="buttons-div w-100 d-flex">
                         <div className="btn-div w-20 me-4">
                             <OutlineButton value="1000 Ден" />
@@ -30,7 +30,7 @@ export const DonationBlock = ({ props }: DonationBlockProps) => {
                         </div>
                     </div>
                     <div className="text-div mt-3">
-                        <p className="body-l fw-400">{props.body.second_section.text2}</p>
+                        <p className="body-l fw-400">{props.second_section.text2}</p>
                     </div>
                     <div className="col-4 mt-5">
                         <p className="body-s fw-400">Друг Износ:</p>

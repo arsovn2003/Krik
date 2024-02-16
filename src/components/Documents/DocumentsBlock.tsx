@@ -36,7 +36,7 @@ const DocumentsBlock = ({ data }: Props) => {
             <div className="container-fluid my-8">
                 <div className="cards__container mb-150">
                     <div className="title">
-                        <h1 className="headline-l fw-800 mb-5">{data.body.first_section.year} година</h1>
+                        <h1 className="headline-l fw-800 mb-5">{data.first_section.year} година</h1>
                     </div>
                     <div className="body d-flex">
                         <Item />
@@ -50,7 +50,7 @@ const DocumentsBlock = ({ data }: Props) => {
                 </div>
                 <div className="cards__container mb-150">
                     <div className="title">
-                        <h1 className="headline-l fw-800 mb-5">{data.body.second_section.year} година</h1>
+                        <h1 className="headline-l fw-800 mb-5">{data.second_section.year} година</h1>
                     </div>
                     <div className="body d-flex">
                         <Item />
@@ -64,7 +64,7 @@ const DocumentsBlock = ({ data }: Props) => {
                 </div>
                 <div className="cards__container mb-150">
                     <div className="title">
-                        <h1 className="headline-l fw-800 mb-5">{data.body.third_section.year} година</h1>
+                        <h1 className="headline-l fw-800 mb-5">{data.third_section.year} година</h1>
                     </div>
                     <div className="body d-flex">
                         <Item />

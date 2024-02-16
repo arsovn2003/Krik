@@ -19,7 +19,7 @@ const About = ({
             <div className="Volunteers container-fluid my-lg-8 my-4">
                 <div className="container">
                     <div className="title m-auto text-center">
-                        <h1 className="headline-xl fw-800">{dataVolunteers.body.first_section.heading}</h1>
+                        <h1 className="headline-xl fw-800">{dataVolunteers.first_section.heading}</h1>
                     </div>
                     <nav className="mt-lg-5 mt-0">
                         <ul className="services-menu d-flex justify-content-evenly p-0">
@@ -49,10 +49,10 @@ const About = ({
 export default About;
 
 export const getStaticProps: GetStaticProps = async () => {
-    const VolunteersBlockRes = await fetch("https://json-server-for-krik.onrender.com/volunteers")
+    const VolunteersBlockRes = await fetch("https://server-json-one.vercel.app/volunteers")
     const VolunteersData: AboutusProps = await VolunteersBlockRes.json()
 
-    const volunteersRes = await fetch("https://json-server-for-krik.onrender.com/volunteers_cards")
+    const volunteersRes = await fetch("https://server-json-one.vercel.app/volunteers_cards")
     const volunteersData: VolunteersItem = await volunteersRes.json()
 
     return {

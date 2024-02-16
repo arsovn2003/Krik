@@ -17,7 +17,7 @@ const ApplicationForm = ({ data }: Props) => {
 export default ApplicationForm;
 
 export const getStaticProps: GetStaticProps = async () => {
-    const AppBlockRes = await fetch("https://json-server-for-krik.onrender.com/application")
+    const AppBlockRes = await fetch("https://server-json-one.vercel.app/application")
     const AppData: ApplicationFormProps = await AppBlockRes.json()
 
     return {

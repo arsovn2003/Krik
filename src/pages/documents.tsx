@@ -18,10 +18,10 @@ const Documents = ({ data }: Props) => {
 export default Documents;
 
 export const getStaticProps: GetStaticProps = async () => {
-    const DocumentsBlockRes = await fetch("https://json-server-for-krik.onrender.com/documents")
+    const DocumentsBlockRes = await fetch("https://server-json-one.vercel.app/documents")
     const DocumentsData: DocumentsProps = await DocumentsBlockRes.json()
 
-    // const DocumentsCardsRes = await fetch("https://json-server-for-krik.onrender.com/documents_cards")
+    // const DocumentsCardsRes = await fetch("https://server-json-one.vercel.app/documents_cards")
     // const DocumentsCards: DocumentsItem[] = await DocumentsCardsRes.json()
 
     return {

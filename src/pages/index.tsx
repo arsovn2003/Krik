@@ -9,7 +9,7 @@ import NewsBlock, { NewsItemInterface } from '@/components/Homepage/NewsBlock'
 import FloatContainer from '@/components/Homepage/FloatContainer'
 import { ServicesBlock } from '@/components/Homepage/ServicesBlock'
 import { Partners } from '@/components/Homepage/Partners'
-// import DynamicPage from './[slug]'
+import DynamicPage from './[slug]'
 import { VideoBlock } from '@/components/Homepage/VideoBlock'
 
 
@@ -67,10 +67,10 @@ export default function Home({
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const bannerDataRes = await fetch("https://json-server-for-krik.onrender.com/homepage")
+  const bannerDataRes = await fetch("https://server-json-one.vercel.app/homepage")
   const bannerData: HomepageProps = await bannerDataRes.json()
 
-  const newsCardsRes = await fetch("https://json-server-for-krik.onrender.com/news_cards")
+  const newsCardsRes = await fetch("https://server-json-one.vercel.app/news_cards")
   const newsCardsData: NewsItemInterface = await newsCardsRes.json()
 
   return {

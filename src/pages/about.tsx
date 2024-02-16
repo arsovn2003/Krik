@@ -19,7 +19,7 @@ const About = ({
 export default About;
 
 export const getStaticProps: GetStaticProps = async () => {
-    const AboutBlockRes = await fetch("https://json-server-for-krik.onrender.com/about")
+    const AboutBlockRes = await fetch("https://server-json-one.vercel.app/about")
     const AboutData: AboutusProps = await AboutBlockRes.json()
 
     return {

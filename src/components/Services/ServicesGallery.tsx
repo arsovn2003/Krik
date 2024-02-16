@@ -14,21 +14,21 @@ const ServicesGallery = ({ gallery }: Props) => {
                 <div className="inner__div">
                     <div className="row">
                         <div className="col-4">
-                            <img src={gallery.body.imgOne} className="img-fluid" />
+                            <img src={gallery.imgOne} className="img-fluid" />
                         </div>
                         <div className="col-8">
-                            <img src={gallery.body.imgTwo} className="img-fluid" />
+                            <img src={gallery.imgTwo} className="img-fluid" />
                         </div>
                     </div>
                     <div className="row mt-4">
                         <div className="col-4">
-                            <img src={gallery.body.imgThree} className="img-fluid" />
+                            <img src={gallery.imgThree} className="img-fluid" />
                         </div>
                         <div className="col-4">
-                            <img src={gallery.body.imgFour} className="img-fluid" />
+                            <img src={gallery.imgFour} className="img-fluid" />
                         </div>
                         <div className="col-4">
-                            <img src={gallery.body.imgFive} className="img-fluid" />
+                            <img src={gallery.imgFive} className="img-fluid" />
                         </div>
                     </div>
                 </div>

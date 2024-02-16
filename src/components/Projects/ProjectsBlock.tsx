@@ -21,7 +21,7 @@ const ProjectsBlock = ({ data, projectsData }: Props) => {
                     <h1 className="headline-xl fw-800">Проекти</h1>
                 </div>
                 <div className="subtitle">
-                    <h2 className="headline-l fw-800" id="#tekovni">{data.body.heading1}</h2>
+                    <h2 className="headline-l fw-800" id="#tekovni">{data.heading1}</h2>
                 </div>
                 <div className="row justify-content-center mt-5">
                     <div className="col-5 p-0 me-5">
@@ -69,7 +69,7 @@ const ProjectsBlock = ({ data, projectsData }: Props) => {
                 </div>
                 <div className="my-8"></div>
                 <div className="subtitle mb-5">
-                    <h2 className="headline-l fw-800" id="#zavrseni">{data.body.heading2}</h2>
+                    <h2 className="headline-l fw-800" id="#zavrseni">{data.heading2}</h2>
                 </div>
                 <div className="row justify-content-center">
                     <div className="col-6 d-flex p-0 me-3">

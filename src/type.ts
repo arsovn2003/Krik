@@ -1,6 +1,5 @@
 export interface HomepageProps {
-    body: {
-        banner_content: {
+    banner_content: {
         title: string;
         subtitle: string;
         text: string;
@@ -37,12 +36,10 @@ export interface HomepageProps {
     news_block: {
         heading: string;
     }
-   }
 }
 
 export interface AboutusProps {
-    body: {
-        about_content: {
+    about_content: {
         img: string;
         heading1: string;
         heading2: string;
@@ -59,66 +56,54 @@ export interface AboutusProps {
         content5: string;
         question: string;
     }
-    }
 }
 
 export interface OurTeamProps {
-    body: {
         heading1: string;
         heading2: string;
-        }
 }
 
 export interface DonationProps {
-    body: {
-        first_section: {
+    first_section: {
         heading: string;
     },
     second_section: {
         text1: string;
         text2: string;
     }
-   }
 }
 
 export interface VolunteersProps {
     map: any;
     slug: string;
-    body: {
-        first_section: {
+    first_section: {
         heading: string;
     },
-   }
 }
 
 export interface VolunteersItem {
-    body: {
-        id: string;
+    id: string;
     img: string;
     firstName: string;
     middleName: string;
     lastName: string;
     years: string;
     country: string;
-   }
 }
 
 export interface VolunteersProjects {
-    body: {
-        id: string;
+    id: string;
     img: string;
     type: string;
     date: string;
     description: string;
     status: string;
-   }
 }
 
 export interface ServicesProps {
     map: any;
     slug: string;
-    body: {
-        component1: {
+    component1: {
         heading: string;
         content: string;
     },
@@ -130,23 +115,19 @@ export interface ServicesProps {
         heading: string;
         content: string;
     }
-   }
 }
 
 export interface ServicesGalleryProps {
-    body: {
-        heading: string;
+    heading: string;
     imgOne: string;
     imgTwo: string;
     imgThree: string;
     imgFour: string;
     imgFive: string;
-  }
 }
 
 export interface DocumentsProps {
-    body: {
-        first_section: {
+    first_section: {
         year: string;
     },
     second_section: {
@@ -155,29 +136,23 @@ export interface DocumentsProps {
     third_section: {
         year: string;
     }
-    }
 }
 
 export interface ApplicationFormProps {
-    body: {
-        heading: string;
-    }
+    heading: string;
 }
 
 export interface NewsletterProps {
     id: any;
-    body: {
     content: string,
     image1: string,
     image2: string,
     image3: string
-   }
 }
 
 export interface ProjectsProps {
     id: any;
-    body: {
-        heading1: string;
+    heading1: string;
     heading2: string;
     heading3: string;
     img1: string;
@@ -186,7 +161,6 @@ export interface ProjectsProps {
     text3: string;
     text4: string;
     text5: string;
-    }
 }
 
 // export interface NewsletterProps {

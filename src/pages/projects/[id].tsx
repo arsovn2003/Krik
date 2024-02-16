@@ -25,18 +25,18 @@ const ProjectDetail = ({ detailsData, datesData }: Props) => {
                     <div className="hero" style={{ backgroundImage: `url(${selectedDate.img})` }}></div>
                     <div className="section-2 my-8">
                         <div className="title w-100 m-auto text-center">
-                            <h2 className='headline-xl fw-800'>{detailsData.body.heading3}</h2>
-                            <p className='body-l fw-400 lh-40 px-80 mt-5'>{detailsData.body.text1}</p>
+                            <h2 className='headline-xl fw-800'>{detailsData.heading3}</h2>
+                            <p className='body-l fw-400 lh-40 px-80 mt-5'>{detailsData.text1}</p>
                         </div>
                     </div>
                     <div className="section-3-projects-details d-flex border-radius">
                         <div className="col-4 border-radius bg-custom-black text-white py-5">
-                            <h2 className='headline-xl fw-800 px-5 pb-80'>{detailsData.body.text3}</h2>
+                            <h2 className='headline-xl fw-800 px-5 pb-80'>{detailsData.text3}</h2>
                         </div>
                         <div className="col-8">
                             <div className="text">
                                 <p className='px-80 pt-5 lh-40'>
-                                    {detailsData.body.text2}
+                                    {detailsData.text2}
                                 </p>
                             </div>
                         </div>
@@ -44,11 +44,11 @@ const ProjectDetail = ({ detailsData, datesData }: Props) => {
                     <div className="section-4 my-8">
                         <div className="row">
                             <div className="col-8 left__container__section-4 d-flex flex-column justify-content-center px-5">
-                                <h3 className='headline-xl fw-800'>{detailsData.body.text4}</h3>
-                                <p className='body-l fw-400 lh-40'>{detailsData.body.text5}</p>
+                                <h3 className='headline-xl fw-800'>{detailsData.text4}</h3>
+                                <p className='body-l fw-400 lh-40'>{detailsData.text5}</p>
                             </div>
                             <div className="col-4">
-                                <img src={detailsData.body.img1} alt="" className='img-fluid' />
+                                <img src={detailsData.img1} alt="" className='img-fluid' />
                             </div>
                         </div>
                     </div>
@@ -87,10 +87,10 @@ const ProjectDetail = ({ detailsData, datesData }: Props) => {
 export async function getServerSideProps(context: any) {
     const { id } = context.params;
 
-    const projectDetailsRes = await fetch("https://json-server-for-krik.onrender.com/projects");
+    const projectDetailsRes = await fetch("http://localhost:5001/projects");
     const detailsData: ProjectsProps = await projectDetailsRes.json();
 
-    const datesRes = await fetch("https://json-server-for-krik.onrender.com/projects_items");
+    const datesRes = await fetch("http://localhost:5001/projects_items");
     const datesData = await datesRes.json();
 
     console.log('data:', detailsData);
