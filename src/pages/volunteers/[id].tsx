@@ -72,7 +72,7 @@ const VolunteerDetail = ({ volunteer, projects }: VolunteerDetailProps) => {
 export default VolunteerDetail;
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const res = await fetch('http://localhost:5001/volunteers_cards');
+    const res = await fetch('https://server-json-one.vercel.app/volunteers_cards');
     const data = await res.json();
 
     const paths = data.map((item: VolunteersItem) => ({
@@ -85,10 +85,10 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
     const { id }: any = params;
 
-    const res = await fetch(`http://localhost:5001/volunteers_cards/${id}`);
+    const res = await fetch(`https://server-json-one.vercel.app/volunteers_cards/${id}`);
     const volunteer = await res.json();
 
-    const volunteersProjectsRes = await fetch('http://localhost:5001/volunteers_projects');
+    const volunteersProjectsRes = await fetch('https://server-json-one.vercel.app/volunteers_projects');
     const volunteersProjectsData = await volunteersProjectsRes.json();
 
     return {
