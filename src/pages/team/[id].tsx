@@ -33,7 +33,7 @@ const VolunteerDetail = ({ teamMember }: TeamMemberDetailProps) => {
 export default VolunteerDetail;
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const res = await fetch('http://localhost:5001/team_cards');
+    const res = await fetch('https://json-server-for-krik.onrender.com/team_cards');
     const data = await res.json();
 
     const paths = data.map((item: TeamItem) => ({
@@ -46,7 +46,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
     const { id }: any = params;
 
-    const res = await fetch(`http://localhost:5001/team_cards/${id}`);
+    const res = await fetch(`https://json-server-for-krik.onrender.com/team_cards/${id}`);
     const teamMem = await res.json();
 
     return {

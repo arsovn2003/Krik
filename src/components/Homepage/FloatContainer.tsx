@@ -15,9 +15,9 @@ const FloatContainer: React.FC<Props> = ({ floatContainerData }) => {
                 <div className="col-12 d-lg-flex d-block">
                     <div className="col-lg-6 float-container__left col-12 bg-custom-black top-left bottom-left">
                         <div className="inner-div px-5 py-5">
-                            <h2 className="mb--lg-5 mb-4 text-uppercase text-warning fw-bold">{floatContainerData.float_container.heading}</h2>
-                            <h4 className='mb-lg-5 mb-4 fw-bold'>{floatContainerData.float_container.subtitle}</h4>
-                            <p className="lh-40 lh-24">{floatContainerData.float_container.text}</p>
+                            <h2 className="mb--lg-5 mb-4 text-uppercase text-warning fw-bold">{floatContainerData.body.float_container.heading}</h2>
+                            <h4 className='mb-lg-5 mb-4 fw-bold'>{floatContainerData.body.float_container.subtitle}</h4>
+                            <p className="lh-40 lh-24">{floatContainerData.body.float_container.text}</p>
                             <div className="btns-div d-flex mt-5">
                                 <div className="col-6 pe-3">
                                     <MainButton value="Види Повеќе" />
@@ -34,7 +34,7 @@ const FloatContainer: React.FC<Props> = ({ floatContainerData }) => {
                         <div className="date-div"><span className="fw-600 fs-56">23</span>
                             <br></br>
                             <span className="fw-600 headline-s">септ</span></div>
-                        <img src={floatContainerData.float_container.img} className="img-fluid top-right bottom-right  bottom-left" />
+                        <img src={floatContainerData.body.float_container.img} className="img-fluid top-right bottom-right  bottom-left" />
                     </div>
                 </div>
             </div>

@@ -25,7 +25,7 @@ const TeamBlock: React.FC<Props> = ({
             <div className="pt-5 pb-3">
                 <div className="container-fluid">
                     <div className="title text-center m-auto w-50 py-5">
-                        <h2 className="headline-xl fw-800 pb-5">{team.heading1}</h2>
+                        <h2 className="headline-xl fw-800 pb-5">{team.body.heading1}</h2>
                     </div>
                     <div className="container justify-content-center team-cards d-flex align-items-center">
                         {teamItem.map(item => (

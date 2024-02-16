@@ -23,7 +23,7 @@ const MembersBlock: React.FC<Props> = ({
             <div className="pt-5 pb-3">
                 <div className="container-fluid px-0">
                     <div className="title text-center m-auto w-100 py-5">
-                        <h2 className="headline-xl fw-800 pb-5">{membersBlockData.heading2}</h2>
+                        <h2 className="headline-xl fw-800 pb-5">{membersBlockData.body.heading2}</h2>
                     </div>
                     <div className="container-fluid member-cards pb-5 px-0">
                         <div className="hr-line"></div>

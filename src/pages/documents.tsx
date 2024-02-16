@@ -18,10 +18,10 @@ const Documents = ({ data, cards }: Props) => {
 export default Documents;
 
 export const getStaticProps: GetStaticProps = async () => {
-    const DocumentsBlockRes = await fetch("http://localhost:5001/documents")
+    const DocumentsBlockRes = await fetch("https://json-server-for-krik.onrender.com/documents")
     const DocumentsData: DocumentsProps = await DocumentsBlockRes.json()
 
-    const DocumentsCardsRes = await fetch("http://localhost:5001/documents_cards")
+    const DocumentsCardsRes = await fetch("https://json-server-for-krik.onrender.com/documents_cards")
     const DocumentsCards: DocumentsItem[] = await DocumentsCardsRes.json()
 
     return {

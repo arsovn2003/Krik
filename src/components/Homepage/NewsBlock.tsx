@@ -25,7 +25,7 @@ const NewsBlock: React.FC<Props> = ({ news, newsBlockData }) => {
                 <div className="container-fluid">
                     <div className="container">
                         <div className="title mb-5">
-                            <h1 className="headline-xl fw-800">{newsBlockData.news_block.heading}</h1>
+                            <h1 className="headline-xl fw-800">{newsBlockData.body.news_block.heading}</h1>
                         </div>
                     </div>
                     <div className="row scroll-container">

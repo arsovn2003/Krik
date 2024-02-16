@@ -43,7 +43,7 @@ const About = ({
 export default About;
 
 export const getStaticProps: GetStaticProps = async () => {
-    const DonationBlockRes = await fetch("http://localhost:5001/donation")
+    const DonationBlockRes = await fetch("https://json-server-for-krik.onrender.com/donation")
     const DonationData: DonationProps = await DonationBlockRes.json()
 
     return {

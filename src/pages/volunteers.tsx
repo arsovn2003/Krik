@@ -49,10 +49,10 @@ const About = ({
 export default About;
 
 export const getStaticProps: GetStaticProps = async () => {
-    const VolunteersBlockRes = await fetch("http://localhost:5001/volunteers")
+    const VolunteersBlockRes = await fetch("https://json-server-for-krik.onrender.com/volunteers")
     const VolunteersData: AboutusProps = await VolunteersBlockRes.json()
 
-    const volunteersRes = await fetch("http://localhost:5001/volunteers_cards")
+    const volunteersRes = await fetch("https://json-server-for-krik.onrender.com/volunteers_cards")
     const volunteersData: VolunteersItem = await volunteersRes.json()
 
     return {

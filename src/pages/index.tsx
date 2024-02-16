@@ -67,10 +67,10 @@ export default function Home({
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const bannerDataRes = await fetch("http://localhost:5001/homepage")
+  const bannerDataRes = await fetch("https://json-server-for-krik.onrender.com/homepage")
   const bannerData: HomepageProps = await bannerDataRes.json()
 
-  const newsCardsRes = await fetch("http://localhost:5001/news_cards")
+  const newsCardsRes = await fetch("https://json-server-for-krik.onrender.com/news_cards")
   const newsCardsData: NewsItemInterface = await newsCardsRes.json()
 
   return {

@@ -12,13 +12,13 @@ export const Banner = ({ bannerData }: BannerData) => {
             <div className="container text-center px-lg-5 px-0 py-5">
                 <div className="inner pt-5 flex-column">
                     <div className="title m-auto mb-5">
-                        <h1 className="headline-xl fw-bold text-uppercase">{bannerData.banner_content.title}</h1>
+                        <h1 className="headline-xl fw-bold text-uppercase">{bannerData.body.banner_content.title}</h1>
                     </div>
                     <div className="sub-title mt-5">
-                        <h3 className="headline-m pt-5">{bannerData.banner_content.subtitle}</h3>
+                        <h3 className="headline-m pt-5">{bannerData.body.banner_content.subtitle}</h3>
                     </div>
                     <div className="text w-50 m-auto mt-3 px-lg-0 px-3">
-                        <p className="body-l">{bannerData.banner_content.text}</p>
+                        <p className="body-l">{bannerData.body.banner_content.text}</p>
                     </div>
                     <div className="btn-div w-50 m-auto mt-5">
                         <Link href={"/about"}>

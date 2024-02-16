@@ -30,13 +30,13 @@ export default Team;
 
 export const getStaticProps: GetStaticProps = async () => {
 
-    const ourTeamRes = await fetch("http://localhost:5001/team")
+    const ourTeamRes = await fetch("https://json-server-for-krik.onrender.com/team")
     const ourTeamData: OurTeamProps = await ourTeamRes.json()
 
-    const teamRes = await fetch("http://localhost:5001/team_cards")
+    const teamRes = await fetch("https://json-server-for-krik.onrender.com/team_cards")
     const teamData: TeamItem = await teamRes.json()
 
-    const membersRes = await fetch("http://localhost:5001/members_cards")
+    const membersRes = await fetch("https://json-server-for-krik.onrender.com/members_cards")
     const membersData: MembersItem = await membersRes.json()
 
     return {

@@ -101,10 +101,10 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
         };
     }
 
-    const res = await fetch(`http://localhost:5001/services/${params.slug}`);
+    const res = await fetch(`https://json-server-for-krik.onrender.com/services/${params.slug}`);
     const serviceData: ServicesProps = await res.json();
 
-    const resGallery = await fetch(`http://localhost:5001/services_gallery`);
+    const resGallery = await fetch(`https://json-server-for-krik.onrender.com/services_gallery`);
     const serviceGalleryData: ServicesGalleryProps = await resGallery.json();
 
     return {

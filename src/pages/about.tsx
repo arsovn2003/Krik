@@ -19,7 +19,7 @@ const About = ({
 export default About;
 
 export const getStaticProps: GetStaticProps = async () => {
-    const AboutBlockRes = await fetch("http://localhost:5001/about")
+    const AboutBlockRes = await fetch("https://json-server-for-krik.onrender.com/about")
     const AboutData: AboutusProps = await AboutBlockRes.json()
 
     return {
