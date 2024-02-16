@@ -63,7 +63,7 @@ const DynamicPage = ({ data, gallery }: Props) => {
 export default DynamicPage;
 export const getStaticPaths: GetStaticPaths = async () => {
     try {
-        const res = await fetch("https://json-server-for-krik.onrender.com/services/services");
+        const res = await fetch("https://json-server-for-krik.onrender.com/services");
         const servicesData: ServicesProps[] = await res.json();
 
         if (!Array.isArray(servicesData)) {
