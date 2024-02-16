@@ -3,11 +3,13 @@ import { OrneButton } from "../Buttons/OrneButton";
 import Link from "next/link";
 
 export interface TeamItem {
-    id: string;
-    img: string;
-    firstName: string;
-    lastName: string;
-    role: string;
+    body: {
+        id: string;
+        img: string;
+        firstName: string;
+        lastName: string;
+        role: string;
+    }
 }
 
 interface Props {
@@ -29,15 +31,15 @@ const TeamBlock: React.FC<Props> = ({
                     </div>
                     <div className="container justify-content-center team-cards d-flex align-items-center">
                         {teamItem.map(item => (
-                            <Link key={item.id} href={`/team/${item.id}`} className="team-card mx-2 text-decoration-none">
+                            <Link key={item.body.id} href={`/team/${item.body.id}`} className="team-card mx-2 text-decoration-none">
                                 <div>
-                                    <img src={item.img} className="img-fluid rounded-5" />
+                                    <img src={item.body.img} className="img-fluid rounded-5" />
                                 </div>
                                 <div className="d-flex">
-                                    <span className="headline-s fw-700 text-black">{item.firstName}&nbsp;{item.lastName}</span>
+                                    <span className="headline-s fw-700 text-black">{item.body.firstName}&nbsp;{item.body.lastName}</span>
                                 </div>
                                 <div>
-                                    <span className="role body-s fw-600 text-black">{item.role}</span>
+                                    <span className="role body-s fw-600 text-black">{item.body.role}</span>
                                 </div>
                             </Link>
                         ))}
